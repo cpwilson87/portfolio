@@ -46,6 +46,10 @@ node_modules/
 /build
 /dist
 
+# build
+/.netlify
+/.svelte-kit
+
 # misc
 .DS_Store
 .env.local
