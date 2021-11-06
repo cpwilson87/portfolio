@@ -3,7 +3,7 @@
 	<nav>
 		<a href="/projects">Projects</a>
 		<a href="/about">About</a>
-		<a href="/contact">Cotnact</a>
+		<a href="/contact">Contact</a>
 	</nav>
 </header>
 
