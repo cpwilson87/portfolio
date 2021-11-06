@@ -1,8 +1,4 @@
 - Portfolio
-  - Scaffold out Svelte Kit application
-  - Create main and development branches
-  - Design site structure in excilidraw 
-  - Implement site structure
   - Write basic sample mark up for each of the pages
   - Add styling for pages (no animations)
   - Review and document site progress
