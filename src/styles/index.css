@@ -87,6 +87,12 @@ textarea {
 	resize: none;
 }
 
+/* Type Formats */
+
+.font-mono {
+	font-family: var(--font-mono);
+}
+
 .underlined {
 	position: relative;
 	text-decoration: none !important;

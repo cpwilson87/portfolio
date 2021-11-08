@@ -58,6 +58,34 @@
 	background: var(--color-gray);
 }
 
-.mono {
-	font-family: var(--font-mono);
+.text-primary {
+	color: var(--color-primary);
+}
+
+.text-primary::selection {
+	background: var(--color-primary);
+}
+
+.text-secondary {
+	color: var(--color-secondary);
+}
+
+.text-secondary::selection {
+	background: var(--color-secondary);
+}
+
+.text-muted {
+	color: var(--color-muted);
+}
+
+.text-muted::selection {
+	background: var(--color-muted);
+}
+
+.text-hinted {
+	color: var(--color-hinted);
+}
+
+.text-hinted::selection {
+	background: var(--color-hinted);
 }
