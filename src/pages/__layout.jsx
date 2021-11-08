@@ -1,10 +1,10 @@
 import { Outlet, NavLink } from 'react-router-dom';
 
-export default function Layout() {
+function Layout() {
 	return (
 		<>
 			<header>
-				<h1>CP Wilson</h1>
+				<h1>CP. Wilson</h1>
 				<nav>
 					<NavLink to="/">Home</NavLink>
 					<NavLink to="/projects">Projects</NavLink>
@@ -18,3 +18,5 @@ export default function Layout() {
 		</>
 	);
 }
+
+export default Layout;
