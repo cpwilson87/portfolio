@@ -1,5 +1,0 @@
-- Portfolio
-  - Test deploy site to netlify
-  - Write basic sample mark up for each of the pages
-  - Add styling for pages (no animations)
-  - Review and document site progress
