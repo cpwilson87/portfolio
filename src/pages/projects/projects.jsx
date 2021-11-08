@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from '@/styles/projects.module.css';
 
+import { ArrowIcon } from '@/assets/icons';
+
 const Projects = () => {
 	return (
 		<div>
@@ -13,7 +15,10 @@ const Projects = () => {
 				{/* Project 1 */}
 				<img src="/project-example.png" alt="Project Screenshot" />
 				<div>
-					<h2>Project 1</h2>
+					<Link to="/projects/project-1" className="h2 link">
+						<p>Project 1</p>
+						<ArrowIcon className="text-green" />
+					</Link>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
 						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.
@@ -23,7 +28,10 @@ const Projects = () => {
 				{/* Project 2 */}
 				<img src="/project-example.png" alt="Project Screenshot" />
 				<div>
-					<h2>Project 2</h2>
+					<Link to="/projects/project-2" className="h2 link">
+						<p>Project 2</p>
+						<ArrowIcon className="text-green" />
+					</Link>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
 						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.
@@ -33,7 +41,10 @@ const Projects = () => {
 				{/* Project 3 */}
 				<img src="/project-example.png" alt="Project Screenshot" />
 				<div>
-					<h2>Project 3</h2>
+					<Link to="/projects/project-3" className="h2 link">
+						<p>Project 3</p>
+						<ArrowIcon className="text-green" />
+					</Link>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
 						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.

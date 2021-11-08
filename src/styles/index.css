@@ -239,6 +239,38 @@ textarea {
 	transform: scaleX(1);
 }
 
+.link {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	border: none;
+	cursor: pointer;
+}
+
+.link p {
+	color: var(--color-text);
+	font-size: 3rem;
+	line-height: 2.75rem;
+	font-weight: 700;
+	transition: all 300ms ease-out;
+}
+
+.link:hover p {
+	color: vaR(--color-secondary);
+}
+
+.link svg {
+	height: 3rem;
+	width: 3rem;
+	transform: rotate(-45deg);
+	transition: all 300ms ease-out;
+}
+
+.link:hover svg {
+	transform: rotate(0deg);
+	color: var(--text-secondary);
+}
+
 /* Colors */
 
 .active {
