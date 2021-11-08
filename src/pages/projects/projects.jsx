@@ -7,10 +7,7 @@ const Projects = () => {
 	return (
 		<div>
 			<h1>Projects</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non voluptatem nobis nemo
-				perspiciatis quis autem officiis architecto maxime dolorem!
-			</p>
+			<p>Here are a few project samples I've worked on in the past year.</p>
 			<section className={styles.layout}>
 				{/* Project 1 */}
 				<img src="/project-example.png" alt="Project Screenshot" />
@@ -19,10 +16,7 @@ const Projects = () => {
 						<p>Project 1</p>
 						<ArrowIcon className="text-green" />
 					</Link>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
-						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.
-					</p>
+					<p>Summary of project.</p>
 					<Link to="/projects/project-1">More Info</Link>
 				</div>
 				{/* Project 2 */}
@@ -32,10 +26,7 @@ const Projects = () => {
 						<p>Project 2</p>
 						<ArrowIcon className="text-green" />
 					</Link>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
-						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.
-					</p>
+					<p>Summary of project.</p>
 					<Link to="/projects/project-2">More Info</Link>
 				</div>
 				{/* Project 3 */}
@@ -45,10 +36,7 @@ const Projects = () => {
 						<p>Project 3</p>
 						<ArrowIcon className="text-green" />
 					</Link>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora, ipsam
-						praesentium reprehenderit nam quam assumenda corrupti vero quas incidunt.
-					</p>
+					<p>Summary of project.</p>
 					<Link to="/projects/project-3">More Info</Link>
 				</div>
 			</section>
