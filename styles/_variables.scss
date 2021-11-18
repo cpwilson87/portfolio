@@ -1,0 +1,112 @@
+/*********************
+Variables
+*********************/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+:root {
+	/* font */
+	--font-base: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* light */
+	--bg-light: #f8fafb;
+	--text-light: #364a59;
+	--shadow-light: 0 2px 4px rgb(105, 112, 117, 0.2);
+
+	--bg1-light: #ffffff;
+	--bg2-light: #f9f9f9;
+	--text1-light: #7d92a1;
+	--text2-light: #dae2e8;
+	--shadow1-light: 0 8px 16px rgb(18, 18, 23, 0.1);
+	--shadow2-light: 0 4px 16px rgb(18, 18, 23, 0.15);
+
+	/* dark */
+	--bg-dark: #2e3438;
+	--text-dark: #ffffff;
+	--shadow-dark: 0 2px 4px rgba(18, 27, 33, 0.4);
+
+	--bg1-dark: #111b22;
+	--bg2-dark: #383e42;
+	--text1-dark: #acbac3;
+	--text2-dark: #566976;
+	--shadow1-dark: 0 4px 32px rgba(18, 27, 33, 0.5);
+	--shadow2-dark: 0 24px 128px rgba(18, 27, 33, 0.9);
+
+	/* accent */
+	--text-btn: var(--text-dark);
+	--primary-inactive: #6dcdd880;
+	--primary-active: #31aab7;
+	--primary-hover: #129aa6;
+	--primary-select: #21717a;
+
+	--secondary-inactive: #0078ce80;
+	--secondary-active: #0078ce;
+	--secondary-hover: #0069b4;
+	--secondary-select: #005a9b;
+
+	--danger-text: #dc3545;
+	--danger-bg: #f8e0e0;
+	--success-text: #28a745;
+	--success-bg: #dff0d8;
+	--warning-text: #ffc107;
+	--warning-bg: #fcf8e3;
+	--info-text: #0066dd;
+	--info-bg: #b8d0ec;
+
+	/* border */
+	--border-radius: 4px;
+
+	--transition-duration: 300ms;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-base);
+	/* Colors */
+	--bg: var(--bg-light);
+	--text: var(--text-light);
+	--shadow: var(--shadow-light);
+
+	--bg1: var(--bg1-light);
+	--bg2: var(--bg2-light);
+	--text1: var(--text1-light);
+	--text2: var(--text2-light);
+	--shadow2: var(--shadow2-light);
+	--shadow3: var(--shadow3-light);
+
+	color: var(---text);
+	background: var(--bg);
+}
+
+body.dark {
+	--bg: var(--bg-dark);
+	--text: var(--text-dark);
+	--shadow: var(--shadow1-dark);
+
+	--bg1: var(--bg1-dark);
+	--bg2: var(--bg2-dark);
+	--text1: var(--text1-dark);
+	--text2: var(--text2-dark);
+	--shadow1: var(--shadow2-dark);
+	--shadow2: var(--shadow3-dark);
+
+	color: var(--text);
+	background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		--bg: var(--bg-dark);
+		--text: var(--text-dark);
+		--shadow: var(--shadow1-dark);
+
+		--bg1: var(--bg1-dark);
+		--bg2: var(--bg2-dark);
+		--text1: var(--text1-dark);
+		--text2: var(--text2-dark);
+		--shadow1: var(--shadow2-dark);
+		--shadow2: var(--shadow3-dark);
+
+		color: var(--text);
+		background: var(--bg);
+	}
+}

@@ -4,8 +4,10 @@ My Portfolio site. More to follow...
 
 ## Site Map
 
-- Home
-- Projects
+- Hero
 - About
+- _Jobs_
+- _Featured_
+- Projects
 - Contact
 - _Blog_
