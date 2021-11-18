@@ -3,6 +3,8 @@ Layout
 
 - Header
 - Footer
+- Grid
+- Article (card)
 *********************/
 
 header {
@@ -10,8 +12,8 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: var(--header-height);
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 
 	// Logo
 	> a {
@@ -76,4 +78,37 @@ footer {
 	justify-content: center;
 	font-family: var(--font-mono);
 	border-top: 1px solid var(--text);
+}
+
+// Grid
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+	gap: 1rem;
+}
+
+// Cards
+article {
+	background-color: var(--color-hinted);
+	border-radius: var(--border-radius);
+	padding: 1rem;
+
+	& > header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: auto;
+		padding: 0;
+	}
+
+	& > footer {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
+		color: var(--color-secondary);
+		font-family: var(--font-mono);
+		margin-top: 1rem;
+		padding: 1rem 0;
+	}
 }
