@@ -1,6 +1,4 @@
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
-
 import { Header, Footer, Hero, About, Projects, Contact } from '../components';
 
 export default function Home() {

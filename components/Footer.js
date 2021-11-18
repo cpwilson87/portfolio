@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
-		<div>
-			<h1>Footer</h1>
-		</div>
+		<footer>
+			<p>Designed & Built by Chris Wilson</p>
+		</footer>
 	);
 }

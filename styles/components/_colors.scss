@@ -1,0 +1,90 @@
+.active {
+	color: var(--color-green);
+}
+
+.text-red {
+	color: var(--color-red);
+}
+.text-red::selection {
+	background: var(--color-red);
+}
+.text-orange {
+	color: var(--color-orange);
+}
+.text-orange::selection {
+	background: var(--color-orange);
+}
+.text-yellow {
+	color: var(--color-yellow);
+}
+.text-yellow::selection {
+	background: var(--color-yellow);
+}
+.text-green {
+	color: var(--color-green);
+}
+.text-green::selection {
+	background: var(--color-green);
+}
+.text-teal {
+	color: var(--color-teal);
+}
+.text-teal::selection {
+	background: var(--color-teal);
+}
+.text-blue {
+	color: var(--color-blue);
+}
+.text-blue::selection {
+	background: var(--color-blue);
+}
+.text-purple {
+	color: var(--color-purple);
+}
+.text-purple::selection {
+	background: var(--color-purple);
+}
+.text-pink {
+	color: var(--color-pink);
+}
+.text-pink::selection {
+	background: var(--color-pink);
+}
+.text-gray {
+	color: var(--color-gray);
+}
+.text-gray::selection {
+	background: var(--color-gray);
+}
+
+.text-primary {
+	color: var(--color-primary);
+}
+
+.text-primary::selection {
+	background: var(--color-primary);
+}
+
+.text-secondary {
+	color: var(--color-secondary);
+}
+
+.text-secondary::selection {
+	background: var(--color-secondary);
+}
+
+.text-muted {
+	color: var(--color-muted);
+}
+
+.text-muted::selection {
+	background: var(--color-muted);
+}
+
+.text-hinted {
+	color: var(--color-hinted);
+}
+
+.text-hinted::selection {
+	background: var(--color-hinted);
+}

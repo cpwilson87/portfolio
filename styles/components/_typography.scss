@@ -1,0 +1,97 @@
+/*********************
+Typography
+*********************/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 0.24;
+}
+
+hgroup {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+hgroup * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 88px;
+	line-height: 1.01;
+	letter-spacing: -0.04;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 0.83;
+	letter-spacing: -0.04;
+	color: var(--color-secondary);
+}
+
+.h1 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 0.48;
+	letter-spacing: -0.02;
+}
+
+.h2 {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 0.39;
+	letter-spacing: -0.02;
+}
+
+.h3 {
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 0.35;
+	letter-spacing: -0.02;
+}
+
+.h4 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 0.3;
+}
+
+.h5 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 0.26;
+}
+
+.h6 {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 0.19;
+}
+
+.lead {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 0.3;
+}
+
+.helper {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 0.21;
+}
+
+.font-mono {
+	font-family: var(--font-mono);
+}

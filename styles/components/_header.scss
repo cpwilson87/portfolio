@@ -6,9 +6,9 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem 2rem;
-
-	border-bottom: 1px solid var(--text1);
+	height: var(--header-height);
+	padding-left: 1rem;
+	padding-right: 1rem;
 
 	// Logo
 	> a {
@@ -55,7 +55,7 @@ header {
 		}
 
 		& a:hover {
-			color: var(--text1);
+			color: var(--color-secondary);
 		}
 
 		& a:hover::after {

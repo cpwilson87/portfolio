@@ -4,6 +4,10 @@ https://github.com/frontaid/natural-selection
 */
 
 @use 'variables';
-@use 'base';
-// Components
+// theme
+@use 'components/base';
+@use 'components/colors';
+@use 'components/typography';
+// components
 @use 'components/header';
+@use 'components/footer';

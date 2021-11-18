@@ -1,112 +1,89 @@
 /*********************
 Variables
 *********************/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 :root {
 	/* font */
-	--font-base: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	/* light */
-	--bg-light: #f8fafb;
-	--text-light: #364a59;
-	--shadow-light: 0 2px 4px rgb(105, 112, 117, 0.2);
-
-	--bg1-light: #ffffff;
-	--bg2-light: #f9f9f9;
-	--text1-light: #7d92a1;
-	--text2-light: #dae2e8;
-	--shadow1-light: 0 8px 16px rgb(18, 18, 23, 0.1);
-	--shadow2-light: 0 4px 16px rgb(18, 18, 23, 0.15);
+	--font-base: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'IBM Plex Mono', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+		'Courier New', monospace;
 
 	/* dark */
-	--bg-dark: #2e3438;
-	--text-dark: #ffffff;
-	--shadow-dark: 0 2px 4px rgba(18, 27, 33, 0.4);
+	--color-dark-text: hsl(214, 100%, 95%);
+	--color-dark-background: hsl(233, 13%, 14%);
+	--color-dark-primary: hsl(240, 3%, 92%);
+	--color-dark-secondary: hsl(0, 0%, 50%);
+	--color-dark-muted: hsl(225, 3%, 23%);
+	--color-dark-hinted: hsl(220, 7%, 18%);
+	--color-dark-gray: hsl(216, 19%, 72%);
+	/* light */
+	--color-light-text: hsl(240, 11%, 7%);
+	--color-light-background: hsl(0, 0%, 97%);
+	--color-light-primary: hsl(218, 13%, 12%);
+	--color-light-secondary: hsl(0, 0%, 50%);
+	--color-light-muted: hsl(240, 1%, 73%);
+	--color-light-hinted: hsl(60, 4%, 95%);
+	--color-light-gray: hsl(217, 25%, 42%);
+	/* accents */
+	--color-red: hsl(360, 81%, 69%);
+	--color-orange: hsl(27, 78%, 63%);
+	--color-yellow: hsl(50, 58%, 60%);
+	--color-green: hsl(104, 32%, 56%);
+	--color-teal: hsl(187, 45%, 58%);
+	--color-blue: hsl(225, 88%, 75%);
+	--color-purple: hsl(279, 53%, 69%);
+	--color-pink: hsl(330, 64%, 71%);
 
-	--bg1-dark: #111b22;
-	--bg2-dark: #383e42;
-	--text1-dark: #acbac3;
-	--text2-dark: #566976;
-	--shadow1-dark: 0 4px 32px rgba(18, 27, 33, 0.5);
-	--shadow2-dark: 0 24px 128px rgba(18, 27, 33, 0.9);
-
-	/* accent */
-	--text-btn: var(--text-dark);
-	--primary-inactive: #6dcdd880;
-	--primary-active: #31aab7;
-	--primary-hover: #129aa6;
-	--primary-select: #21717a;
-
-	--secondary-inactive: #0078ce80;
-	--secondary-active: #0078ce;
-	--secondary-hover: #0069b4;
-	--secondary-select: #005a9b;
-
-	--danger-text: #dc3545;
-	--danger-bg: #f8e0e0;
-	--success-text: #28a745;
-	--success-bg: #dff0d8;
-	--warning-text: #ffc107;
-	--warning-bg: #fcf8e3;
-	--info-text: #0066dd;
-	--info-bg: #b8d0ec;
-
-	/* border */
+	/* layout */
 	--border-radius: 4px;
-
+	--header-height: 5rem;
+	--footer-height: 3rem;
+	--content-width: 94ch;
 	--transition-duration: 300ms;
 }
 
+/* Themes */
 body {
-	margin: 0;
+	--color-text: var(--color-dark-text);
+	--color-bg: var(--color-dark-background);
+	--color-primary: var(--color-dark-primary);
+	--color-secondary: var(--color-dark-secondary);
+	--color-muted: var(--color-dark-muted);
+	--color-hinted: var(--color-dark-hinted);
+	--color-gray: var(--color-dark-gray);
+
 	font-family: var(--font-base);
-	/* Colors */
-	--bg: var(--bg-light);
-	--text: var(--text-light);
-	--shadow: var(--shadow-light);
-
-	--bg1: var(--bg1-light);
-	--bg2: var(--bg2-light);
-	--text1: var(--text1-light);
-	--text2: var(--text2-light);
-	--shadow2: var(--shadow2-light);
-	--shadow3: var(--shadow3-light);
-
-	color: var(---text);
-	background: var(--bg);
+	color: var(--color-text);
+	background: var(--color-bg);
 }
 
-body.dark {
-	--bg: var(--bg-dark);
-	--text: var(--text-dark);
-	--shadow: var(--shadow1-dark);
+body.light {
+	--color-text: var(--color-light-text);
+	--color-bg: var(--color-light-background);
+	--color-primary: var(--color-light-primary);
+	--color-secondary: var(--color-light-secondary);
+	--color-muted: var(--color-light-muted);
+	--color-hinted: var(--color-light-hinted);
+	--color-gray: var(--color-light-gray);
 
-	--bg1: var(--bg1-dark);
-	--bg2: var(--bg2-dark);
-	--text1: var(--text1-dark);
-	--text2: var(--text2-dark);
-	--shadow1: var(--shadow2-dark);
-	--shadow2: var(--shadow3-dark);
-
-	color: var(--text);
-	background: var(--bg);
+	color: var(--color-text);
+	background: var(--color-bg);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 	body {
-		--bg: var(--bg-dark);
-		--text: var(--text-dark);
-		--shadow: var(--shadow1-dark);
+		--color-text: var(--color-light-text);
+		--color-bg: var(--color-light-background);
+		--color-primary: var(--color-light-primary);
+		--color-secondary: var(--color-light-secondary);
+		--color-muted: var(--color-light-muted);
+		--color-hinted: var(--color-light-hinted);
+		--color-gray: var(--color-light-gray);
 
-		--bg1: var(--bg1-dark);
-		--bg2: var(--bg2-dark);
-		--text1: var(--text1-dark);
-		--text2: var(--text2-dark);
-		--shadow1: var(--shadow2-dark);
-		--shadow2: var(--shadow3-dark);
-
-		color: var(--text);
-		background: var(--bg);
+		color: var(--color-text);
+		background: var(--color-bg);
 	}
 }
