@@ -1,6 +1,12 @@
 /*********************
 Typography
+- Headings
+- Body
+	- Links
+	- Lists
 *********************/
+
+//Headings
 p,
 h1,
 h2,
@@ -12,7 +18,7 @@ label,
 button {
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 0.24;
+	// line-height: 0.24;
 }
 
 hgroup {
@@ -94,4 +100,60 @@ hgroup * {
 
 .font-mono {
 	font-family: var(--font-mono);
+}
+
+// Body
+p {
+	line-height: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+// Links
+a {
+	display: inline-block;
+	color: var(--color-blue);
+	text-decoration: underline;
+	font-family: var(--font-mono);
+	position: relative;
+}
+
+p > a {
+	text-decoration: none;
+}
+
+p > a::after {
+	position: absolute;
+	display: block;
+	background-color: var(--color-blue);
+	content: '';
+	height: 1px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+	transition: transform var(--transition-duration) ease-out;
+	transform-origin: left;
+}
+
+p > a:hover::after {
+	transform: scaleX(1);
+}
+
+// Lists
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.1rem;
+}
+
+li::before {
+	content: '+';
+	color: var(--color-green);
+	padding-right: 1rem;
 }

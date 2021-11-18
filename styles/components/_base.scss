@@ -28,7 +28,7 @@ main {
 }
 
 section {
-	min-height: 80vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -78,9 +78,6 @@ hr,
 dl {
 }
 
-p {
-}
-
 ol,
 ul {
 }
@@ -127,14 +124,9 @@ dd {
 Inline text semantics
 *********************/
 
-a {
-	color: var(--info-text);
-	text-decoration: none;
-}
 a:visited {
 }
-a:hover {
-}
+
 a:active {
 }
 
