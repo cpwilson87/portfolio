@@ -25,14 +25,15 @@ header {
 
 	// Logo
 	> a {
-		font-size: 1.4rem;
-		line-height: 0.8;
-		letter-spacing: 0.6rem;
 		font-weight: 700;
+		font-size: 24px;
+		line-height: 0.3;
+		letter-spacing: 0.04rem;
 		position: relative;
 		text-transform: uppercase;
 		text-decoration: none;
-		color: var(--text);
+		color: var(--color-text);
+		text-shadow: 0.2px 0.2px 0.2px var(--color-secondary);
 	}
 
 	// Navigation

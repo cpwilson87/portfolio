@@ -11,7 +11,7 @@ export default function Contact() {
 	};
 	return (
 		<section id="contact">
-			<h2 className="subtitle">Contact</h2>
+			<h2 className="title">Contact</h2>
 			<p>
 				I am currently looking for my first full-time position as a web developer and would love to
 				hear from you. If you are interested in hiring me please contact me.

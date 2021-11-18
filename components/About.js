@@ -1,7 +1,7 @@
 export default function About() {
 	return (
 		<section id="about">
-			<h1 className="subtitle">About Me</h1>
+			<h1 className="title">About Me</h1>
 			<p>
 				Hello! My name is Chris and I enjoy designing and creating solutions to help make the world
 				a little easier. I love to make front end applications that combine nice clean interfaces

@@ -37,6 +37,7 @@ hgroup * {
 	font-size: 88px;
 	line-height: 1.01;
 	letter-spacing: -0.04;
+	text-shadow: 1px 1px 1px var(--color-secondary);
 }
 
 .subtitle {
@@ -45,27 +46,28 @@ hgroup * {
 	line-height: 0.83;
 	letter-spacing: -0.04;
 	color: var(--color-secondary);
+	text-shadow: 1px 1px 1px var(--color-hinted);
 }
 
 .h1 {
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 0.48;
-	letter-spacing: -0.02;
+	letter-spacing: -0.02rem;
 }
 
 .h2 {
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 0.39;
-	letter-spacing: -0.02;
+	letter-spacing: -0.02rem;
 }
 
 .h3 {
 	font-weight: 400;
 	font-size: 28px;
 	line-height: 0.35;
-	letter-spacing: -0.02;
+	letter-spacing: -0.02rem;
 }
 
 .h4 {
@@ -106,10 +108,11 @@ small {
 p {
 	line-height: 2rem;
 	letter-spacing: 0.1rem;
+	text-shadow: 0.2px 0.2px 0.2px var(--color-secondary);
 }
 
 // Links
-a {
+main a {
 	display: inline-block;
 	color: var(--color-blue);
 	text-decoration: underline;

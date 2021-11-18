@@ -32,6 +32,7 @@ input[type='email'] {
 	border: none;
 	outline: none;
 	border-radius: var(--border-radius);
+	box-shadow: 1px 1px 0.25px 0.25px var(--color-muted);
 }
 /* - individual styling */
 textarea {
@@ -46,4 +47,5 @@ input[type='submit'] {
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	cursor: pointer;
+	box-shadow: 1px 1px 0.25px 0.25px var(--color-muted);
 }
