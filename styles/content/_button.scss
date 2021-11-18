@@ -1,0 +1,31 @@
+button[aria-busy='true'] {
+	pointer-events: none;
+	opacity: 0.8;
+
+	&::before {
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		border: 0.1875em solid currentColor;
+		border-radius: 1em;
+		border-right-color: transparent;
+		vertical-align: text-bottom;
+		vertical-align: -0.125em;
+		animation: spinner 0.75s linear infinite;
+		content: '';
+	}
+}
+
+[aria-busy='true']:not(input):not(select):not(textarea):not(:empty)::before {
+	margin-right: 0.5rem;
+	margin-left: 0;
+}
+[aria-busy='true']:not(input):not(select):not(textarea):empty {
+	text-align: center;
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}

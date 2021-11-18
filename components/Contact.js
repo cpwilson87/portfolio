@@ -4,9 +4,13 @@ export default function Contact() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
+	const [loading, setLoading] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		setLoading(true);
+		setTimeout(() => setLoading(false), 3000);
+
 		console.log({ name, email, message });
 	};
 	return (
@@ -43,7 +47,9 @@ export default function Contact() {
 						onChange={(e) => setMessage(e.target.value)}
 					/>
 				</label>
-				<input type="submit" value="Send" />
+				<button type="submit" aria-busy={loading ? 'true' : 'false'}>
+					Send
+				</button>
 			</form>
 		</section>
 	);

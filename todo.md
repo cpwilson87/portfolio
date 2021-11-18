@@ -1,0 +1,11 @@
+- typewriter effect on hero image
+- svg bullet points
+- auto scroll between sections
+- add photo to about section
+- modal for form submission confirmation
+- button styling
+  - box-shadow
+- netlify forms
+- add real projects to projects section
+- make responsive
+- theme toggle

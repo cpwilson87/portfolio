@@ -7,21 +7,19 @@ Layout
 - Article (card)
 *********************/
 
-#about {
-	margin-bottom: 20vh;
-}
-
 section {
 	margin-bottom: 25vh;
 }
 
-header {
+#__next > header {
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: var(--header-height);
 	padding-left: 2rem;
 	padding-right: 2rem;
+	height: var(--header-height);
 
 	// Logo
 	> a {
@@ -33,7 +31,6 @@ header {
 		text-transform: uppercase;
 		text-decoration: none;
 		color: var(--color-text);
-		text-shadow: 0.2px 0.2px 0.2px var(--color-secondary);
 	}
 
 	// Navigation
@@ -109,16 +106,45 @@ article {
 		justify-content: space-between;
 		height: auto;
 		padding: 0;
+		transition: all var(--transition-duration) ease-out;
+		cursor: pointer;
+
+		& svg {
+			transition: all var(--transition-duration) ease-out;
+		}
+
+		&:hover {
+			color: var(--color-green);
+		}
+
+		&:hover svg {
+			transform: rotate(45deg);
+		}
 	}
 
 	& > footer {
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
-		gap: 1rem;
+		justify-content: space-between;
 		color: var(--color-secondary);
 		font-family: var(--font-mono);
 		margin-top: 1rem;
 		padding: 1rem 0;
+
+		& > div {
+			display: flex;
+			gap: 0.5rem;
+		}
+
+		& > svg {
+			cursor: pointer;
+			color: var(--color-text);
+			height: 20px;
+			transition: all var(--transition-duration) ease-out;
+
+			&:hover {
+				color: var(--color-green);
+			}
+		}
 	}
 }
