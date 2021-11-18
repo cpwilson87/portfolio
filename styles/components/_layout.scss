@@ -7,6 +7,14 @@ Layout
 - Article (card)
 *********************/
 
+#about {
+	margin-bottom: 20vh;
+}
+
+section {
+	margin-bottom: 25vh;
+}
+
 header {
 	display: flex;
 	align-items: center;
@@ -78,6 +86,7 @@ footer {
 	justify-content: center;
 	font-family: var(--font-mono);
 	border-top: 1px solid var(--text);
+	margin-top: 25vh;
 }
 
 // Grid

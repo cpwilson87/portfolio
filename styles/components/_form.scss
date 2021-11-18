@@ -1,0 +1,49 @@
+/*********************
+Forms
+*********************/
+
+form {
+	display: grid;
+	gap: 0.5rem;
+}
+
+label {
+	margin-bottom: 1rem;
+
+	& > input,
+	> textarea {
+		margin-top: 0.5rem;
+	}
+}
+
+form input,
+form textarea {
+	width: 100%;
+}
+
+/* - common styling */
+textarea,
+input[type='text'],
+input[type='email'] {
+	font-family: var(--font-base);
+	padding: 1rem;
+	background-color: var(--color-hinted);
+	color: var(--color-text);
+	border: none;
+	outline: none;
+	border-radius: var(--border-radius);
+}
+/* - individual styling */
+textarea {
+	resize: vertical;
+}
+
+button,
+input[type='submit'] {
+	margin-top: 1rem;
+	background-color: var(--color-green);
+	border: none;
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+}

@@ -1,21 +1,12 @@
-import Link from 'next/link';
-
 export default function Header() {
 	return (
 		<header>
-			<Link href="#home">
-				<a>CP. Wilson</a>
-			</Link>
+			<a href="#">CP. Wilson</a>
+
 			<nav>
-				<Link href="#about">
-					<a>About</a>
-				</Link>
-				<Link href="#projects">
-					<a>Projects</a>
-				</Link>
-				<Link href="#contact">
-					<a>Contact</a>
-				</Link>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
 			</nav>
 		</header>
 	);
